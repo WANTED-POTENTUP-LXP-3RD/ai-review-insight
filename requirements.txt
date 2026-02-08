@@ -1,0 +1,17 @@
+# --- API
+fastapi==0.115.0
+uvicorn[standard]==0.30.6
+
+# --- HF Summarization Model Runtime
+transformers==4.44.2
+torch==2.4.0
+sentencepiece==0.2.0
+
+# --- .env
+sqlalchemy==2.0.36
+pymysql==1.1.1
+python-dotenv==1.0.1
+
+# --- Text Analysis (Rule/Morph) ---
+kiwipiepy
+regex
