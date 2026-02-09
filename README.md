@@ -99,8 +99,6 @@ ai-review-insight/
 │  │
 │  ├─ domains/
 │  │  └─ review_insight/
-│  │     ├─ model.py
-│  │     │  └─ (선택) Enum/상수/도메인 규칙(예: Tone) 같은 “순수 모델”
 │  │     ├─ schema.py
 │  │     │  └─ Request/Response DTO (Pydantic)
 │  │     ├─ service.py
