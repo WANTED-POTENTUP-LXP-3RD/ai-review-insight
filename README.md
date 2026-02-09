@@ -61,7 +61,7 @@ pip install -r requirements.txt
 ### 서버 실행
 아래 명령은 프로젝트 루트 디렉터리에서 실행합니다.
 ```bash
-uvicorn app.main:app --reload --port 8001
+uvicorn app.main:app --reload --port 8001 #http://localhost:8001/internal/review/analyze
 ```
 정상 실행 로그
 ```bash

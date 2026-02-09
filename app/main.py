@@ -1,5 +1,18 @@
 from __future__ import annotations
 
-from app.api.api import create_api
+from fastapi import FastAPI
+from app.api.api import api_router
 
-app = create_api()
+
+def create_app() -> FastAPI:
+    app = FastAPI(title="ai-review-insight", version="0.1.0")
+    app.include_router(api_router)
+
+    @app.get("/health")
+    def health():
+        return {"status": "OK"}
+
+    return app
+
+
+app = create_app()
