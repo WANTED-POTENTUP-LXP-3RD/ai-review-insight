@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from fastapi import FastAPI
+from fastapi import APIRouter
+from app.domains.review_insight.router import router as review_insight_router
 
-def create_api() -> FastAPI:
-    app = FastAPI(title="ai-review-insight")
-    return app
+api_router = APIRouter()
+api_router.include_router(review_insight_router)
