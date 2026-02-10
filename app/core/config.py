@@ -18,8 +18,8 @@ def _float(name: str, default: float) -> float:
 
 
 class Settings:
-    # Java 내부망 Base URL
-    JAVA_INTERNAL_BASE_URL: str = os.getenv("JAVA_INTERNAL_BASE_URL", "http://localhost:8080")
+    # Java 내부망 Base URL # Java로 콜백 준비 (현재 사용 되지 않음)
+    # JAVA_INTERNAL_BASE_URL: str = os.getenv("JAVA_INTERNAL_BASE_URL", "http://localhost:8080")
 
     # http client timeout (seconds)
     HTTP_CONNECT_TIMEOUT: float = _float("HTTP_CONNECT_TIMEOUT", 2.0)
